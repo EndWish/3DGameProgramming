@@ -1,0 +1,3 @@
+XMVector 나 XMMatrix가 SIMD를 지원하기 때문에 빠르다. 단, 클래스다 구조체에서 사용불가능
+그래서 클래스나 구조체에서는 XMFLOAT3, XMINT3와 같은 클래스를 쓰면 된다. (대신 이것들은 SIMD와 상관이 없다.)
+따라서, XMFLOAT3를 XMVector로 바꾸어 계산을하고 받아온값을 다시 XMFLOAT3로 바꾸어 사용한다.
